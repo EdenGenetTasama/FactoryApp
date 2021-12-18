@@ -34,5 +34,17 @@ namespace FactoryApp.Controllers
             return View();
 
         }
+
+        public ActionResult ManagerList()
+        {
+
+            List<Manger> list = new List<Manger>();
+            list.Add(new Manger("aaa", "bbbb", 1996));
+            list.Add(new Manger("cccc", "dddd", 1998));
+            list.Add(new Manger("eee", "fff", 2000));
+
+            return View(list);
+
+        }
     }
 }

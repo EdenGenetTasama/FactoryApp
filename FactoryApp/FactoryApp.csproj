@@ -177,6 +177,8 @@
     <Content Include="Views\Manager\ShowOneManagerName.cshtml" />
     <Content Include="Views\Manager\ShowManagersInfo.cshtml" />
     <Content Include="Views\Employee\Make6EmployeeObj.cshtml" />
+    <Content Include="Views\Supervisor\Retrn4ListObj.cshtml" />
+    <Content Include="Views\Manager\ManagerList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
