@@ -10,19 +10,21 @@ namespace FactoryApp.Controllers
     public class EmployeeController : Controller
     {
         // GET: Employee
-        public ActionResult ShowOneEmployeeName()
-        {
-            //string name = "Eden";
-            //ViewBag.Name = name;
-            //return View(name);
-            return View(ReturnObjEmployee());
-        }
+        //public ActionResult ShowOneEmployeeName()
+        //{
+        //    //string name = "Eden";
+        //    //ViewBag.Name = name;
+        //    //return View(name);
+        //    //return Json(ReturnObjEmployee(),JsonRequestBehavior.AllowGet);
+        //}
 
         private static Employee ReturnObjEmployee()
         {
             Employee employeOne = new Employee("Eden" , "Employee", 1996 , 527303780);
             return employeOne;
         }
+
+        
 
 
 
@@ -44,6 +46,24 @@ namespace FactoryApp.Controllers
         {
 
             return View();
+        }
+
+        public ActionResult Make6EmployeeObj()
+        {
+            return View(ReturnList());
+        }
+
+        private static List<Employee> ReturnList()
+        {
+            List<Employee> employees = new List<Employee>();
+            for (int i = 0; i < 6; i++)
+            {
+                Employee employeeObj = new Employee("EDEN", "TASAMA", 1996, 589688);
+                employees.Add(employeeObj);
+
+            }
+
+            return employees;
         }
     }
 }

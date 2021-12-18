@@ -9,6 +9,8 @@ namespace FactoryApp.Controllers
 {
     public class SupervisorController : Controller
     {
+        private ActionResult supervisorOne;
+
         // GET: Supervisor
         public ActionResult ShowOneSupervisorName()
         {
@@ -34,6 +36,22 @@ namespace FactoryApp.Controllers
 
         }
 
+        public ActionResult Retrn4ListObj()
+        {
+           
+            return ReturnToAction();
+        }
 
+        private static Supervisor ReturnToAction()
+        {
+            List<Supervisor> supervisorList = new List<Supervisor>();
+
+            for (int i = 0; i < 4; i++)
+            {
+                Supervisor supervisorOne = new Supervisor("DANIEL", "TAL", 1996, 85632);
+                supervisorList.Add(supervisorOne);
+            }
+            return supervisorList;
+        }
     }
 }

@@ -120,7 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\API\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManagerController.cs" />
     <Compile Include="Controllers\SupervisorController.cs" />
@@ -176,6 +176,7 @@
     <Content Include="Views\Supervisor\ShowSupervisorsInfo.cshtml" />
     <Content Include="Views\Manager\ShowOneManagerName.cshtml" />
     <Content Include="Views\Manager\ShowManagersInfo.cshtml" />
+    <Content Include="Views\Employee\Make6EmployeeObj.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
